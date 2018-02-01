@@ -1,0 +1,5 @@
+sýnýf nesne
+kalýtým
+çok biçimlilik
+eriþim kontrolleri
+- bunlar nesne prog. temel mantýðýdýr

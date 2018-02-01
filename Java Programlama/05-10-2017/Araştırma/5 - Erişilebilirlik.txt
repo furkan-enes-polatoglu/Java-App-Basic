@@ -1,0 +1,6 @@
+Public > Protected > default > private
+
+Public = Bütün sýnýflar eriþebilir
+Protected = Alt sýnýflar
+Default = Ayný paketler eriþebilir
+Private = Alt sýnýflar dahil baþka hiçbir sýnýf eriþemez.

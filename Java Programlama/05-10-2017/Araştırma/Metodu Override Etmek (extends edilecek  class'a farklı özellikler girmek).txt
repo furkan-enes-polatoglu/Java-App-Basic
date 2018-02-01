@@ -1,0 +1,109 @@
+(   M e t o d u   O v e r r i d e   E t m e k   )  - (bazý metotlar farklýlýk gösterdiðinde içini doldurmamýz gerekiyorsa kullanýlýr)
+
+public class Hayvan {		
+				    
+     int yas;
+
+     public void main yuru()
+     {
+          System.out.println("Yürüdüm");
+     }
+
+public void yasSoyle()
+     {
+          System.out.println("Yaþým = " + yas);
+     }
+
+public void sesCikar()
+     {
+          System.out.println("Ben bir hayvaným");
+     }          
+
+}
+
+// Burada "Kedi'ye de Köpeðe'de ayný ses çýkarma özelliðini verdik. Ýkiside " ben bir hayvaným " diyebilir. Bunun için sesCikar() metodu kullandýk.
+
+________________________________________________________________________________________________________________________________________________________________________
+
+public class HayvanDene {		
+     
+     public void static main(Strings[]args)
+     {
+          Kedi k = new Kedi();
+          k.yuru();
+          k.yas = 19;
+
+          Kopek t = new Kopek();
+          t.yuru();
+          t.yas = 12;
+
+          k.yasSoyle();
+          t.yasSoyle();
+
+          k.sesCikar();
+          t.sesCikar();
+     }
+
+}
+
+// Bu þekilde çalýþtýrýldýðýnda "Ben bir hayvaným  -  Ben bir hayvaným" çýktýsýný alýrýz. Yani ikiside Ben bir hayvaným diyor.
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+public class Kedi extends Hayvan {
+
+     public	void sesCikar()
+     {
+          System.out.println("Miyav!");
+     }
+
+} 
+
+// Burada sesCikar() metodu Kedi classýnda tekrardan tanýmlanmýþtýr. Çünkü hayvanlarýn ses çýkarma özelliði farklý olduðu için. Bu classa farklý bir deðer verdik. Yani bu metodu "Override" etmiþ olduk.
+// Bundan sonra tekrar "HayvanDene" classýný çalýþtýrdýktan sonra Kedi ve Köpek farklý sesler çýkaracaktýr.
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+public class Kedi extends Hayvan {
+
+     public	void sesCikar()
+     {
+          super . sesCikar();
+          System.out.println("Miyav!");
+     }
+
+     public void kediyeOzel()
+     {
+          System.out.println("Kediye Özel");
+     }
+
+} 
+
+// Bunu çalýþtýrdýðýmýzda çýktýsý (Kedi için)  : "Ben bir hayvaným!  -  Miyav!" olacaktýr.
+// super :   "super" in üzerine gelindiðinde Hayvan yazar. Yani kalýtým verilerini aldýðýmýz class.  "Extends edilen class'a (Hayvan classýna)  bu class içerisinde (Kedi classý içerisinde) super classý diyoruz.
+// Kedi classýnýn "super" classý Hayvan classýdýr.
+// super . sesCikar();  =  Burada Kedi classýna,  Hayvan classýnýn sesCikar() metodunu çaðýrmýþ oluyor.
+
+_______________________________________________________________________________________________________________________________________________________________________
+
+public class Kedi extends Hayvan {
+
+     public	void sesCikar()
+     {
+          System.out.println(" Miyav, ben " + yas + " yaþýndayým.);
+     }
+
+     public void kediyeOzel()
+     {
+          System.out.println("Kediye Özel");
+     }
+
+} 
+
+// Buradaki + yas + deðiþkenini Kedi classýnda oluþturmadýðýmýz halde "Hayvan" classýndan çekecek. Orada yas deðiþkeni mevcut.
+
+
+/// Bu bölümde extends yaptýðýmýz classlara özgü özellik vermeyi öðrendik.
+
+_______________________________________________________________________________________________________________________________________________________________________
+

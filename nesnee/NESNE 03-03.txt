@@ -1,0 +1,116 @@
+		System.out.println("+9 % +4 = " +  9 % 4);
+		System.out.println("+9 % -4 = " +  9 % -4);
+		System.out.println("-9 % +4 = " +  -9 % +4);
+		System.out.println("-9 % -4 = " +  -9 % -4);
+
+		+9 % +4 = 1
+		+9 % -4 = 1
+		-9 % +4 = -1
+		-9 % -4 = -1
+#######################################################################
+		int i = 99;
+		int j = -99;
+		int k = 0;
+		
+		System.out.println(i++);
+		System.out.println(++i-j--); (+100) - (-100)
+		System.out.println(j++-++k); 
+		System.out.println(k++);
+
+		99
+		200
+		-101
+		1
+########################################################################
+	/*         & bit düzeyinde "VE" iþlemi
+		   | bit düzeyinde "VEYA" iþlemi
+		   ^ bit düzeyinde "XOR" iþlemi (ayrýcalýklý VEYA)
+		  
+		   && "Lojik VE" iþlemi
+		   || "Lojik VEYA" iþlemi
+		   ?: "Seçme" Operatörü
+		   = "Atama" Operatörü
+		   == "Eþit" Operatörü
+		   != "Eþit Deðil" Operatörü
+	*/
+
+
+
+       &,&&           |,||         ^ (xor)
+       x  y  z           x  y  z        x  y  z 
+       0  0  0         0  0  0       0  0  0
+       0  1  0         0  1  1       0  1  1
+       1  0  0         1  0  1       1  0  1
+       1  1  1         1  1  1       1  1  0
+
+#########################################################################
+
+10'luk tabaný 2'lik tabana çevirme ÇALIÞ
+2'lik tabandan 10'luk tabana çevirme ÇALIÞ
+
+#########################################################################
+/*	System.out.println(true | false);
+		System.out.println(true & false);
+		System.out.println(false);
+		System.out.println(true ^ false);
+		System.out.println(3 | 5);
+*/
+
+
+#########################################################################
+
+charAt(0) /*Karekter olarak gir demektir.*/
+
+DOUBLE === Double.parseDouble /*Double'yi sayýya çevirmek için kullanýlýr.
+
+Double.parseDouble(JOptionPane.showInputDialog("2.Sayýyý giriniz : "));
+
+(((METÝN KUTUSU HALÝNDE PROGRAMI ÇALIÞTIRIR.)))
+
+INT === Integer.parseInt(JOptionPane.showInputDialog("Bir sayi gir : "));
+
+
+#########################################################################
+
+ÖDEV : Kullanýcýdan 1 ve 7 arasýnda sayý girmesini iste, girilen deðere göre. Bugün Pazartesi
+salý, çarþamba... vs. Haftasonu olunca bugün haftasonu desin (SWÝTCH ÝLE)
+
+#########################################################################
+
+### METÝN KUTUSU HALÝNDE HESAP MAKÝNESÝ YAPIMI ###
+
+double sayi1;
+		double sayi2;
+		char operator;
+		double sonuc=0;
+		boolean durum  = true;
+		
+		sayi1 = Double.parseDouble(JOptionPane.showInputDialog("1.Sayýyý giriniz : "));
+		operator = JOptionPane.showInputDialog("Ýþlemi giriniz : ").charAt(0);
+		sayi2 = Double.parseDouble(JOptionPane.showInputDialog("2.Sayýyý giriniz : "));
+		
+		switch(operator) {
+			case '*' :
+				sonuc = sayi1 * sayi2;
+				break;
+			case '/' :
+				sonuc = sayi1 / sayi2;
+				break;
+			case '+' :
+				sonuc = sayi1 + sayi2;
+				break;
+			case '-' :
+				sonuc = sayi1 - sayi2;
+				break;
+			default :
+				durum = false;
+				System.out.println("HATALI ÝÞLEM!");
+				
+		}
+			if (durum==true)
+			System.out.println("Ýþlemin sonucu = "+sonuc);
+		
+	    }
+}
+##################################################################################
+

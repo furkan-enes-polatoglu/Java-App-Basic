@@ -1,0 +1,42 @@
+int [] sayi = {5,7,9,3,-1,5+3,7-2}
+char [] kar = {'b' , 'i' , 'a' , 'g'}
+point [] p ;
+
+int tamsayi[], matrisyapi [] [], kubik [] [] []
+
+sayi.length 
+
+System.out.println(kar[0]);
+
+System.out.println(kar[kar.length-1]);
+
+int [] sayi = new int [10];
+int [] [] sayi2 = new int [7] [5];
+int son eleman = sayi2 [6] [4];
+
+
+Point[] points = new Point[3];
+		
+		for(int i=0; i<points.length; i++)
+		{
+			points[i] = new Point(i*i, i*i);
+			
+			for(Point p:points) //points dizisinin baþýndan sonuna kadar her elemaný
+							  //kontrol edecek	
+			{
+				System.out.println(p);
+			}
+
+ÇIKTI : 
+java.awt.Point[x=0,y=0]
+null
+null
+java.awt.Point[x=0,y=0]
+java.awt.Point[x=1,y=1]
+null
+java.awt.Point[x=0,y=0]
+java.awt.Point[x=1,y=1]
+java.awt.Point[x=4,y=4]
+
+
+

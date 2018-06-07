@@ -1,0 +1,45 @@
+JOptionPane
+KurucuMetotlar
+Son hafta konusu 
+this.isim
+Döngülerde çýktý ne olur, **break, continue
+Diziler
+
+int [] [] a = new int [10] [10]
+//son eleman [9] [9]
+
+int [] a = new int [10]
+//son eleman [9]
+
+eþitlikler, equals, deep equals
+
+x++  ,  x--
+
+deðiþken tiperi : int long double
+
+if else
+
+switch, case
+
+* int a = (int)5.43;
+  System.out.println(a);
+çýktýsý : 5 olur
+
+cating iþlemi, sayý döndürme iþlemi
+
+* System.out.println(3 | 5) 
+ çýktýsý = 7 olur.
+
+*+9 % +4 = 1
+ +9 % -4 = 1
+ -9 % +4 = -1
+ -9 % -4 = -1
+
+*while , do/while
+
+KÜTÜPHANELER >>>>
+
+import javax.swing.JOptionPane;
+import java.util.Scanner;
+
+// private(sert) < protected(orta) < public(serbest) - eriþilebilirlik sýrasý.

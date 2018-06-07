@@ -1,0 +1,95 @@
+int a = 5; //-2147483648....47
+byte b; //(byte=2^8) -128, 127 arasýnda tam sayý deðeridir.
+short s; //-32768, 32767 arasýnda tam sayý deðiridir.
+long l; //(8 byte=2^64) -9223372036854775808...80
+
+boolean durum = true; // þart belirlediðinde iþlemi durdurmak için kullanýlýr.
+durum = false;
+
+char k = 'furkan'; // char kullanýnca metinler tek týrnak yazýlýr.
+
+float f; (8 byte)
+double d; */ (4 byte) - Küsüratlý sayýlar için kullanýlýr.
+
+
+##################################################################################
+
+System.out.print("ilk örnek");
+
+/* bu bir açýklama satýrýdýr, konsolde görünmez. */
+
+int a=50;
+int b=70;
+int sonuc;
+
+boolean kontrol = false;
+sonuc=a+b;
+
+if (sonuc>=50) {
+	
+	kontrol = true;
+}
+
+if(kontrol == true) 
+{
+	System.out.println ("Öðrenci notu :"+sonuc+ "\t , \n Dersi geçti);
+}
+else 
+{
+	System.out.println ("Öðrenci notu :"+sonuc");
+}
+
+#############################################################################################################
+
+
+float a = 1.2E+8F;
+double b = 3.123
+double sonuc;
+
+####################
+
+char harf = 'a';
+char yeniSatir = '\n';
+char unicode = '\u0065';
+
+System.out.println("Harf :"+harf);
+System.out.println("yeniSatir :"+yeniSatir);
+System.out.println("unicode :"+unicode);
+
+################################################
+
+Scanner = dosyadan veri okumayý , veri yazmayý saðlayan bir komuttur.
+
+*** Scanner klavye = new scanner // klavye nesnesi oluþturduk, o nesne scanner sýnýfýn temsil ediyor þuanda. Scanner sýnýfýna "klavye" nesnesinden eriþebiliyorum.//
+
+import.java.util.Scanner ( scanner kütüphanesini bu sýnýfa dahil et)
+
+###########################################################
+
+Scanner klavye = new scanner (System.in);
+System.out.print ("Yaþýný gir:");
+byte yas = klavye.nextByte();
+String cinsiyet = klavye.next();
+
+if (yas>=20 && cinsiyet.equalsIgnoreCase("Erkek")) // equals(matematikteki = ' anlamýna gelir, 
+						   // Ignore Case demek karakterler büyük ve küçük olsada önemseme//
+{
+System.out.println ("Yaþý :"+yas+ "\t)
+}
+else if (yas<20 && cinsiyet.equals("Erkek");
+    
+    
+
+
+
+
+
+// ÖDEV //Kullanýcýdan 2 tane sayý ve yapacaðý iþlemi (*,/,+,-) girerek elde edilen sonucu ekrana yazdýran program.
+
+ibrahim.ozcan@dpu.edu.tr
+
+
+
+
+
+
